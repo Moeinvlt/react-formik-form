@@ -9,6 +9,12 @@
     font-family: 'samim';
 }
 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}  
+
 @layer components {
     .alert-validate {
         @apply text-red-500;

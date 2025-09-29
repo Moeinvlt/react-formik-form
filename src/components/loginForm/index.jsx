@@ -5,6 +5,34 @@ import { initialValues, onSubmit, validationSchema } from '../../formValues/form
 import FormikControl from '../formikComponents/FormikControl';
 import Spiner from '../spiner';
 
+
+// ** Enter select items here ** //
+    const educations = [
+        {id: 1, value: 'سیکل'},
+        {id: 2, value: 'دیپلم'},
+        {id: 3, value: 'لیسانس'},
+        {id: 4, value: 'فوق لیسانس'},
+        {id: 5, value: 'دکترا'},
+    ];
+// ** The end ** //
+
+// ** Enter radio items here ** //
+    const getGenders = [
+        {id: 1, value: 'زن'},
+        {id: 2, value: 'مرد'},
+    ];
+// ** The end ** //
+
+// ** Enter checkbox items here ** //
+const skills = [
+    {id: 1, value: 'HTML'},
+    {id: 2, value: 'CSS'},
+    {id: 3, value: 'JS'},
+    {id: 4, value: 'REACT'},
+];
+// ** The end ** //
+
+
 const LoginForm = () => {
     return(
         <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-[#31326F] to-[#4FB7B3]">
