@@ -5,8 +5,12 @@ const initialValues = {
     password: '',
 }
 
-const onSubmit = (values) => {
+const onSubmit = (values, submitProps) => {
     console.log(values);
+    setTimeout(() => {
+        submitProps.setSubmitting(false);
+        submitProps.resetForm();
+    },4000)
 }
 
 const validationSchema = Yup.object({

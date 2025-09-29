@@ -3,6 +3,7 @@ import galaxyImage from '../../assets/images/gradient-galaxy.jpg'
 import { FaLock, FaUser } from "react-icons/fa";
 import { initialValues, onSubmit, validationSchema } from '../../formValues/formValues';
 import FormikControl from '../formikComponents/FormikControl';
+import Spiner from '../spiner';
 
 const LoginForm = () => {
     return(
@@ -16,6 +17,7 @@ const LoginForm = () => {
                 initialValues={initialValues}
                 onSubmit={onSubmit}
                 validationSchema={validationSchema}
+                validateOnMount
                 >
                     {
                         formik=>{
@@ -51,7 +53,16 @@ const LoginForm = () => {
 
                                         <div className="text-center pt-4 md:pt-10">
                                             <button type="submit" className="bg-[#31326F] hover:bg-[#637AB9] 
-                                            transition-all duration-300 cursor-pointer text-white md:text-[18px] inline-block px-6 md:px-14 py-1.5 md:py-2.5 rounded-[7px] ">ورود</button>
+                                            transition-all duration-300 cursor-pointer text-white md:text-[18px]
+                                            inline-block w-[75px] h-[36px] flex justify-center items-center md:w-[143px] md:h-[47px] rounded-[7px] disabled:bg-[#637AB9]"
+                                            disabled={ !formik.isValid || formik.isSubmitting }
+                                            >
+                                                {
+                                                    formik.isSubmitting ? (
+                                                        <Spiner />
+                                                    ) : ("ورود")
+                                                }
+                                            </button>
                                         </div> 
                                     </Form>
                                 </div>
