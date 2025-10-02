@@ -3,7 +3,8 @@ import FormCustomError from "../errors/FormCustomeError";
 
 const Input = ({formik, type, name, icon, label}) => {
     return(
-        <div className="pt-2 relative" data-validate = {formik.errors.name}>
+        
+        <div className="pt-2 relative">
             <label htmlFor={name} className='text-[12px] text-[#31326F] sr-only'>{label}</label>
 
             <FastField 
@@ -17,7 +18,7 @@ const Input = ({formik, type, name, icon, label}) => {
 
             <ErrorMessage name={name} component={FormCustomError}/>
 
-            <span className="text-white text-[14px] absolute top-[22px] left-[13px] md:top-[24px]">{icon}</span>
+            <span role="img" aria-hidden="true" className="pointer-events-none text-white text-[14px] absolute top-[22px] left-[13px] md:top-[24px]">{icon}</span>
         </div>
     )
 }

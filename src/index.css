@@ -25,4 +25,19 @@ select {
     .rounded_b_r {
         border-bottom-right-radius: 10px;
     }
+
+    .font_samim {
+        font-family: 'samim' !important;
+    }
+
+    .my-toast .Toastify__progress-bar {
+        background-color: #FF3F33 !important;
+        opacity: 100% !important;
+    }
+
+    .custome_toasti {
+        background-color: #134686 !important;
+        color: white !important;
+        padding: 1.5rem !important;
+    }
 }

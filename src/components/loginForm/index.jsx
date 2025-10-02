@@ -52,7 +52,7 @@ const LoginForm = () => {
                             console.log(formik);
                             return(
                                 <div className="rounded_b_r bg-white h-[60%] md:w-[40%] md:h-full md:order-1 rounded-b-[10px] md:rounded-b-[0px] md:rounded-r-[10px] px-6.5 md:px-5 order-3 border-[#31326F] border-t-0">
-                                    <h3 className="text-[#31326F] font-bold text-center text-[20px] md:text-2xl pt-5 pb-3 md:pb-8">فرم ورود</h3>
+                                    <h3 className="text-[#31326F] font-bold text-center text-[20px] md:text-2xl pt-5 pb-2 md:pb-8">فرم ورود</h3>
                                     
                                     <Form>
 

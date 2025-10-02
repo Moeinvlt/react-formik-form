@@ -1,5 +1,4 @@
-import { ErrorMessage, FastField } from "formik";
-import FormCustomError from "../errors/FormCustomeError";
+import { FastField } from "formik";
 import { FaChevronDown } from "react-icons/fa";
 
 const Select = ({formik, name, icon, label, options}) => {
@@ -23,8 +22,6 @@ const Select = ({formik, name, icon, label, options}) => {
             </FastField>
             <span className="absolute left-3.5 top-6.5 text-white pointer-events-none text-[14px]"><FaChevronDown /></span>
 
-
-            <ErrorMessage name={name} component={FormCustomError}/>
         </div>
     )
 }

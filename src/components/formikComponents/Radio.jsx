@@ -1,5 +1,4 @@
-import { ErrorMessage, FastField } from "formik";
-import FormCustomError from "../errors/FormCustomeError";
+import { FastField } from "formik";
 import { Fragment } from "react";
 
 const Radio = ({formik, name, label, options}) => {
@@ -27,7 +26,6 @@ const Radio = ({formik, name, label, options}) => {
                 }}
             </FastField>
 
-            <ErrorMessage name={name} component={FormCustomError}/>
         </div>
     )
 }
