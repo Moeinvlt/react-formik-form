@@ -11,8 +11,8 @@ const Input = ({formik, type, name, icon, label}) => {
              type={type} 
              name={name} 
              id={name} 
-             placeholder={`لطفا ${label} خود را وارد کنید`}
-             className='w-full outline-none bg-[#637AB9] p-1.5 pr-3 md:p-2 rounded-[20px]
+             placeholder={label}
+             className='w-full outline-none bg-[#637AB9] p-1.5 pr-3 md:p-2 md:pr-4 rounded-[20px]
              placeholder-white placeholder:text-[12px] text-[16px] text-white mt-1'
             />
 

@@ -2,9 +2,9 @@ import { ErrorMessage, FastField } from "formik";
 import FormCustomError from "../errors/FormCustomeError";
 import { Fragment } from "react";
 
-const Checkbox = ({formik, name, label, options}) => {
+const Checkbox = ({ name, label, options}) => {
     return(
-        <div className="pt-2 relative" data-validate = {formik.errors.name}>
+        <div className="pt-2 relative">
             <label htmlFor={name} className='text-[12px] text-[#31326F] sr-only'>{label}</label>
 
             <FastField
@@ -20,6 +20,7 @@ const Checkbox = ({formik, name, label, options}) => {
                             {...field}
                             value={o.value}
                             checked={field.value.includes(o.value)}
+                            className="accent-[#637AB9]"
                             />
                             <label htmlFor={o.value} className="text-[12px] ml-4 mr-1">{o.value}</label>
                         </Fragment>

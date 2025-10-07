@@ -1,4 +1,6 @@
+@import "../public/animations/animation.css";
 @import "tailwindcss";
+
 
 @font-face {
     font-family: 'samim';
@@ -40,4 +42,39 @@ select {
         color: white !important;
         padding: 1.5rem !important;
     }
+
+    .elipse {
+        width: 110px;
+        height: 40px;
+        background: none;
+        border-radius: 50%;
+        -ms-transform: rotate(40deg);  /* IE 9 */
+        -webkit-transform: rotate(40deg);  /* Safari */
+        transform: rotate(40deg);
+        position: absolute;
+        left: -18px;
+        top: 25px;
+        border: 5px solid rgb(255, 255, 255);
+        pointer-events: none;
+    }
+
+    .orbit {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: spin 5s linear infinite;
+        transform-origin: center;
+        pointer-events: none;
+      }
+      
+      .rocket {
+        position: absolute;
+        bottom: 0;
+        right: 14%;
+        color: #ed3f27;
+        font-size: 2.5rem;
+        transform-origin: center;
+        transform: rotate(150deg);
+      }
 }
+

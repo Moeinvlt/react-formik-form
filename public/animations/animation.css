@@ -1,0 +1,17 @@
+
+/* ** Space Ship animation ** */
+
+@media (min-width:768px) {
+    .rocket {
+        right: 21%;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
